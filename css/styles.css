@@ -6,7 +6,7 @@ line-height: 140%;
 
 header {
   height: 690px;
-  padding: 60px 3.5% 100px 3.5%;
+  padding: 40px 3.5% 100px 3.5%;
   background-image: url("../images/header_bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -21,23 +21,45 @@ header {
   text-align: center;
 }
 
+.toplogo {
+  width: 340px;
+  height: 42px;
+}
+
 nav {
   font-size: 1.3rem;
   padding: 25px 0 25px 0;
 	float: right;
 }
 
-ul#navbar li {
+ul#desktopnav li {
 	display:inline;
 	padding: 8px;
 }
 
-#navbar a:link, #navbar a:visited {
+#desktopnav a:link, #desktopnav a:visited {
     color: #ffffff;
 }
 
-#navbar a:hover, #navbar a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
+#desktopnav a:hover, #desktopnav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
     color: #81bc00;
+}
+
+ul#mobilenav li {
+	display:block;
+	padding: 8px;
+}
+
+#mobilenav a:link, #mobilenav a:visited {
+    color: #ffffff;
+}
+
+#mobilenav a:hover, #mobilenav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
+    color: #81bc00;
+}
+
+#mobilenav {
+	display: none;
 }
 
 p {
@@ -45,19 +67,19 @@ p {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin: 120px 5% 80px 5%;
   line-height: 130%;
   clear: both;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-bottom: 18px;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -188,4 +210,57 @@ ul#contactlist li {
 footer {
   padding: 30px 11% 30px 11%;
   clear: both;
+}
+
+
+@media only screen and (max-width:1034px){
+  #desktopnav {
+  	font-size: 1.15rem;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width:976px){
+  #desktopnav {
+  	font-size: 0.95rem;
+  }
+}
+
+@media only screen and (max-width:896px){
+  #desktopnav {
+  	display: none;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h3 {
+    font-size: 1.4rem;
+  }
+  .toplogo {
+    width: 290px;
+    height: 36px;
+  }
+}
+
+@media only screen and (min-width:896px){
+  #mobilenav {
+  	display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:420px){
+
+}
+
+@media only screen and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
 }
