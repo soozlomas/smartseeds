@@ -1,7 +1,10 @@
+* {
+  line-height: 140%;
+}
+
 body {
 color: #111;
 font-family: 'Karla', sans-serif;
-line-height: 140%;
 font-size: 16px;
 }
 
@@ -70,7 +73,6 @@ p {
 h1 {
   font-size: 2.6rem;
   margin: 120px 5% 80px 5%;
-  line-height: 130%;
   clear: both;
 }
 
@@ -91,7 +93,6 @@ h3 {
 h4 {
   font-size: 2.2rem;
   text-align: center;
-  line-height: 120%;
 }
 
 .keytext {
@@ -115,9 +116,14 @@ h4 {
   color: #81bc00;
 }
 
+.font2rem {
+  font-size: 2rem;
+}
+
 .font22rem {
   font-size: 2.2rem;
 }
+
 
 .greenbackground {
   background-color: #81bc00;
@@ -198,21 +204,28 @@ ul#diagrams li img {
   clear: both;
 }
 
-ul#contactlist li {
-	display: inline;
-  float: left;
+.contactsection {
+  width: 50%;
 }
 
 .contactinfo {
   width: 50%;
-  float: left;
+  display: inline;
+}
+
+.emailus {
+  display: inline-block;
+  width: 100%;
+}
+
+ul#emailus li {
+	display: inline;
 }
 
 footer {
   padding: 30px 11% 30px 11%;
   clear: both;
 }
-
 
 @media only screen and (max-width:1034px){
   #desktopnav {
