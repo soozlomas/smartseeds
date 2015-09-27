@@ -27,6 +27,7 @@ header {
 .toplogo {
   width: 340px;
   height: 42px;
+  float: left;
 }
 
 nav {
@@ -71,12 +72,12 @@ p {
 
 h1 {
   font-size: 2.6rem;
-  margin: 100px 5% 60px 5%;
+  padding: 80px 5% 60px 5%;
   clear: both;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-bottom: 18px;
 }
 
@@ -113,6 +114,10 @@ h4 {
 
 .greentext {
   color: #81bc00;
+}
+
+.font090rem {
+  font-size: 0.9rem;
 }
 
 .font1p2rem {
@@ -236,19 +241,20 @@ ul.sponsorlogos li {
 }
 
 .group:after {
-content: "";
-display: table;
-clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .halfwidth {
-display: inline-block;
-width: 49%;
+  display: inline-block;
+  width: 49%;
 }
 .contactsingle {
-display: inline-block;
-vertical-align: text-top;
-width: 49%;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 49%;
+  padding-right: 3%;
 }
 
 .socialmedia {
@@ -258,8 +264,18 @@ width: 49%;
 
 ul.socialmedia li {
 	display:inline;
-  padding: 0 40px 0 0;
+  padding: 0 38px 0 0;
 }
+
+.socialmediamobile {
+  display: none;
+}
+
+ul.socialmediamobile li {
+  display:inline;
+  padding: 0 38px 0 0;
+}
+
 
 input {
   background-color: #5f9932;
@@ -290,7 +306,7 @@ footer {
   #desktopnav {
   	font-size: 1.15rem;
   }
-  header h1 {
+  h1 {
     font-size: 2.2rem;
   }
   h3 {
@@ -302,11 +318,24 @@ footer {
   .bigactionbutton {
     padding: 50px 30px 50px 30px;
   }
+  .keytext {
+    font-size: 1.2rem;
+  }
+  ul.socialmedia li {
+    padding: 0 20px 0 0;
+  }
+  input[type=text] {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width:976px){
   #desktopnav {
   	font-size: 0.95rem;
+  }
+  .contactsingle, form.font1p2rem, input.font1p2rem {
+    font-size: 1.1rem;
+    line-height: 140%;
   }
 }
 
@@ -314,7 +343,7 @@ footer {
   #desktopnav {
   	display: none;
   }
-  header h1 {
+  h1 {
     font-size: 1.8rem;
   }
   h3 {
@@ -327,6 +356,15 @@ footer {
     width: 290px;
     height: 36px;
   }
+  ul.socialmedia li {
+    padding: 0 10px 0 0;
+    text-align: center;
+  }
+  .contactsingle, form.font1p2rem, input.font1p2rem {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
 }
 
 @media only screen and (min-width:896px){
@@ -371,8 +409,23 @@ footer {
   .twitter {
     display: none;
   }
-
-
+  #left {
+    width: 100%;
+  }
+  #right {
+    width: 100%;
+  }
+  .socialmedia {
+    display: none;
+  }
+  .socialmediamobile {
+    display: inline;
+    width: 100%;
+  }
+  .contactsingle, form.font1p2rem, input.font1p2rem {
+    font-size: 1.2rem;
+    line-height: 140%;
+  }
 }
 
 @media only screen and (min-device-width : 320px)
