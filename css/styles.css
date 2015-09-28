@@ -49,16 +49,20 @@ ul#desktopnav li {
     color: #81bc00;
 }
 
-ul#mobilenav li {
+#tabletnav {
+	display: none;
+}
+
+ul#tabletnav li {
 	display:block;
 	padding: 8px;
 }
 
-#mobilenav a:link, #mobilenav a:visited {
+#tabletnav a:link, #tabletnav a:visited {
     color: #ffffff;
 }
 
-#mobilenav a:hover, #mobilenav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
+#tabletnav a:hover, #tabletnav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
     color: #81bc00;
 }
 
@@ -255,18 +259,18 @@ ul.sponsorlogos li {
 
 .halfwidth {
   display: inline-block;
-  width: 49%;
+  width: 47%;
 }
 .contactsingle {
   display: inline-block;
   vertical-align: text-top;
   width: 49%;
   padding-right: 3%;
+  margin-bottom: 30px;
 }
 
 .socialmedia {
   width: 100%;
-  margin-top: 30px;
 }
 
 ul.socialmedia li {
@@ -289,7 +293,7 @@ input {
   height: 28px;
   width: 100%;
   border: 0;
-  margin-bottom: 15px;
+  margin: 5px 0 15px 0;
 }
 
 input[name=message] {
@@ -302,6 +306,7 @@ input[type=submit] {
   width: 20%;
   border: 0;
   float: right;
+  margin-bottom: 45px;
 }
 
 .forminput {
@@ -315,7 +320,7 @@ textarea {
     height: 56px;
     width: 100%;
     border: 0;
-    margin-bottom: 10px;
+    margin: 5px 0 10px 0;
 }
 
 footer {
@@ -389,10 +394,10 @@ footer {
 }
 
 @media only screen and (min-width:896px){
-  #mobilenav {
+  #tabletnav {
   	display: none;
   }
-  .hamburger {
+  .tablethamburger {
     display: none;
   }
 }
@@ -440,14 +445,47 @@ footer {
     display: none;
   }
   .socialmediamobile {
-    display: inline;
+    display: inline-block;
     width: 100%;
+  }
+  ul.socialmediamobile li:nth-child(4) {
+    padding: 0;
   }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1.2rem;
     line-height: 140%;
   }
 }
+
+@media only screen and (min-width:420px){
+  #mobilenav {
+  	display: none;
+  }
+  .mobilehamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:420px){
+  #tabletnav {
+  	display: none;
+  }
+  .tablethamburger {
+    display: none;
+  }
+  nav {
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+  }
+  .mobilehamburger {
+    display: block;
+    padding: 10px;
+  }
+}
+
+
 
 @media only screen and (min-device-width : 320px)
 and (max-device-width : 480px) {
