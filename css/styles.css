@@ -229,6 +229,13 @@ ul.sponsorlogos li {
   clear: both;
 }
 
+#left {
+  vertical-align: top;
+}
+
+#right {
+  vertical-align: top;
+}
 
 .contactinfo {
   width: 50%;
@@ -278,7 +285,7 @@ ul.socialmediamobile li {
 
 
 input {
-  background-color: #5f9932;
+  background-color: #ffffff;
   height: 28px;
   width: 100%;
   border: 0;
@@ -289,12 +296,26 @@ input[name=message] {
   height: 56px;
 }
 
-input[type=button] {
+input[type=submit] {
   font-family: 'Karla', sans-serif;
   height: 28px;
   width: 20%;
   border: 0;
   float: right;
+}
+
+.forminput {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  padding: 5px;
+}
+
+textarea {
+    height: 56px;
+    width: 100%;
+    border: 0;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -324,7 +345,7 @@ footer {
   ul.socialmedia li {
     padding: 0 20px 0 0;
   }
-  input[type=text] {
+  .forminput {
     font-size: 0.9rem;
   }
 }

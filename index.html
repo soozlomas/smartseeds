@@ -100,7 +100,7 @@
 
     <section id="contact" class= "greenbackground group whitetext keytext">
       <p>Expressions of interest for 2016 Smart Seeds program are now open.
-        Complete the form below or contact Jeremy or Tammy.</p>
+        Please contact Jeremy or Tammy or complete the form below.</p>
         <div>
           <div id="left" class="halfwidth">
             <div class="contactsingle">
@@ -128,20 +128,21 @@
               <li><img src="images/email.png" alt="Email" width=56px height=56px></li>
             </ul>
           </div>
-          <div id="right" class="halfwidth">
+          <fieldset id="right" class="halfwidth">
               <form class="font1p2rem">
-                Name<br>
-                <input type="text" name="name">
+                <label>Name</label><br>
+                <input type="text" name="name" class="forminput" placeholder="your name here">
                 <br>
-                Email address<br>
-                <input type="text" name="email">
+                <label>Email address</label><br>
+                <input type="email" name="email" class="forminput" placeholder="your email address here">
                 <br>
-                Message<br>
-                <input type="text" name="message">
+                <label>Message</label><br>
+                <!-- <input type="text" name="message" class="forminput" placeholder="your message here"> -->
+                <textarea name="message" class="forminput" placeholder="your message here"></textarea>
                 <br>
-                <input type="button" class="whitetext font1p2rem" value="Send">
+                <input type="submit" class="greentext font1p2rem" value="Send">
               </form>
-          </div>
+          </fieldset>
           <ul class="socialmediamobile centretext">
             <li><img src="images/twitter.png" alt="Twitter" width=56px height=56px></li>
             <li><img src="images/facebook.png" alt="Facebook" width=56px height=56px></li>
