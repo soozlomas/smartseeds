@@ -11,44 +11,40 @@
   <body>
 
     <header>
-      <div>
-        <img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo">
-        <nav>
-          <ul id="desktopnav" class="uppercase">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COMPETITIONS</a></li>
-            <li><a href="#">RESOURCES</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+          <img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo">
+          <nav>
+            <ul id="desktopnav" class="uppercase">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">COMPETITIONS</a></li>
+              <li><a href="#">RESOURCES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
 
-          <h2 class="tablethamburger whitetext">MENU</h2>
+            <p class="tablethamburger whitetext uppercase">MENU</p>
 
-          <ul id="tabletnav" class="uppercase">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COMPETITIONS</a></li>
-            <li><a href="#">RESOURCES</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+            <ul id="tabletnav" class="uppercase">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">COMPETITIONS</a></li>
+              <li><a href="#">RESOURCES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
 
-          <h2 class="mobilehamburger whitetext greenbackground">MENU</h2>
+            <p class="mobilehamburger whitetext greenbackground uppercase">MENU<p>
 
-          <ul id="mobilenav" class="uppercase">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COMPETITIONS</a></li>
-            <li><a href="#">RESOURCES</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-
-        </nav>
-        <div></div>
+            <ul id="mobilenav" class="uppercase">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">COMPETITIONS</a></li>
+              <li><a href="#">RESOURCES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
 
         <h1 class="whitetext centretext">Smart Seeds is an annual innovation competition
           for young professionals focused on solving real challenges in the infrastructure sectors </h1>
         <h3 class="whitetext"><a class="smallactionbutton whitetext greenbackground" href="#">GET INVOLVED IN 2016</a></h3>
-      </div>
     </header>
 
     <section class= "summary centretext">
@@ -56,12 +52,13 @@
       <p class="keytext">Led by GHD, Smart Seeds runs for 10 weeks each year, bringing together bright young minds from different disciplines and organisations to work on innovative concepts for our infrastructure industry.  </p>
     </section>
 
-    <section class= "diagrams">
-      <ul id="diagrams">
+    <section class="diagrams">
+      <div class="desktopdiagrams">
+        <img src="images/howitworksv3.jpg" alt="How it works" width=100%>
+      </div>
+      <ul id="mobilediagrams">
         <li><img src="images/challenge.png" alt="challenge"></li>
-        <li><img src="images/greenline.jpg" alt="challenge"></li>
         <li><img src="images/ideadev.png" alt="challenge"></li>
-        <li><img src="images/greenline.jpg" alt="challenge"></li>
         <li><img src="images/pitch.png" alt="challenge"></li>
       </ul>
     </section>
@@ -109,7 +106,7 @@
     </section>
 
     <section id="contact" class= "greenbackground group whitetext keytext">
-      <p>Expressions of interest for 2016 Smart Seeds program are now open.
+      <p>Expressions of interest for the 2016 Smart Seeds program are now open.
         Please contact Jeremy or Tammy or complete the form below.</p>
         <div>
           <div id="left" class="halfwidth">
@@ -119,7 +116,7 @@
               <ul class="contact-detail-list">
                 <li>Jeremy Stone</li>
                 <li><a href="tel://+61 3 8687 8341">+61 3 8687 8341</a></li>
-                <li><a href="mailto:foo@bar.com">Email Jeremy</a></li>
+                <li><a href="mailto:jeremy.stone@ghd.com">Email Jeremy</a></li>
               </ul>
             </div>
             <div class="contactsingle">
@@ -128,7 +125,7 @@
               <ul class="contact-detail-list">
                 <li>Tammy Lau</li>
                 <li><a href="tel://+61 3 8687 8519">+61 3 8687 8519</a></li>
-                <li><a href="mailto:foo@bar.com">Email Tammy</a></li>
+                <li><a href="mailto:tammy.lau@ghd.com">Email Tammy</a></li>
               </ul>
             </div>
             <ul class="socialmedia centretext">
@@ -165,6 +162,9 @@
     <footer class= "greenbackground">
       <p class="whitetext centretext">&copy; 2013 - 2015 Founding Partner GHD Pty Ltd  |  FAQs  |  Privacy Policy  | Contact Us</p>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 

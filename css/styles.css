@@ -9,10 +9,15 @@ font-size: 16px;
 }
 
 header {
-  padding: 40px 3.5% 0 3.5%;
+  padding: 40px 5% 0 5%;
   background-image: url("../images/header_bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.logonav {
+  vertical-align: bottom;
+  display: inline-block;
 }
 
 .uppercase {
@@ -32,7 +37,8 @@ header {
 
 nav {
   font-size: 1.3rem;
-  padding: 25px 0 25px 0;
+  height: 42px;
+  padding-top: 22.5px;
 	float: right;
 }
 
@@ -49,25 +55,44 @@ ul#desktopnav li {
     color: #81bc00;
 }
 
-#tabletnav {
+.tablethamburger {
+  padding-right: 8px;
+  text-align: right;
+  display: none;
+}
+
+#tabletnav, #mobilenav {
 	display: none;
 }
 
 ul#tabletnav li {
 	display:block;
+  font-size: 1.2rem;
 	padding: 8px;
+  background-color: #000000;
+  text-align: right;
 }
 
-#tabletnav a:link, #tabletnav a:visited {
+#tabletnav a:link, #tabletnav a:visited, #mobilenav a:link, #mobilenav a:visited  {
     color: #ffffff;
 }
 
-#tabletnav a:hover, #tabletnav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
+#tabletnav a:hover, #tabletnav a:active, #mobilenav a:hover, #mobilenav a:active, .actionbutton a:link, .actionbutton a:visited, .signupnow a:hover, .signupnow a:active {
     color: #81bc00;
 }
 
-#mobilenav {
-	display: none;
+ul#mobilenav li, {
+	display:block;
+  font-size: 1.2rem;
+	padding: 8px;
+  background-color: #000000;
+  text-align: left;
+}
+
+.mobilehamburger {
+  padding-left: 8px;
+  text-align: right;
+  display: none;
 }
 
 p {
@@ -145,26 +170,26 @@ h4 {
 }
 
 .smallactionbutton {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   display: block;
-  padding: 30px 0 30px 0;
+  padding: 25px 5% 25px 5%;
   margin-bottom: 50px;
 }
 
 .summary {
-  padding: 60px 11% 60px 11%;
+  padding: 60px 11% 20px 11%;
 }
 
 .diagrams {
-  padding: 0 11% 80px 11%;
+  padding: 0 11% 50px 11%;
 }
 
-ul#diagrams li {
+ul#mobilediagrams li {
 	display:inline;
 }
 
-ul#diagrams li img {
+ul#mobilediagrams li img {
   vertical-align: middle;
 }
 
@@ -186,7 +211,7 @@ ul#diagrams li img {
   height: 315px;
   float: left;
   margin: 0 0 0 3%;
-  padding: 70px 30px 70px 30px;
+  padding: 70px 5% 70px 5%;
 }
 
 .furtherinfo {
@@ -197,7 +222,7 @@ ul#diagrams li img {
 .sponsors {
   width: 47%;
   margin: 0 3% 0 0;
-  padding: 20px;
+  padding: 20px 5% 20px 5%;
   float: left;
   border: 1px solid black;
 }
@@ -207,7 +232,8 @@ ul#diagrams li img {
 }
 
 ul.sponsorlogos {
-  padding: 20px 0 10px 0;
+  padding: 20px 0 5px 0;
+  line-height: 2.2rem;
 }
 
 ul.sponsorlogos li {
@@ -269,13 +295,18 @@ ul.sponsorlogos li {
   margin-bottom: 30px;
 }
 
+.contact-detail-list li a {
+  color: #ffffff;
+}
+
 .socialmedia {
-  width: 100%;
+  width: 97%;
 }
 
 ul.socialmedia li {
 	display:inline;
-  padding: 0 38px 0 0;
+  padding: 0 8.5% 0 0;
+  text-align: center;
 }
 
 .socialmediamobile {
@@ -284,7 +315,7 @@ ul.socialmedia li {
 
 ul.socialmediamobile li {
   display:inline;
-  padding: 0 38px 0 0;
+  padding: 0 8.5% 0 0;
 }
 
 
@@ -303,7 +334,7 @@ input[name=message] {
 input[type=submit] {
   font-family: 'Karla', sans-serif;
   height: 28px;
-  width: 20%;
+  width: 25%;
   border: 0;
   float: right;
   margin-bottom: 45px;
@@ -328,12 +359,25 @@ footer {
   clear: both;
 }
 
-@media only screen and (max-width:1034px){
+@media only screen and (max-width:1068px){
   #desktopnav {
   	font-size: 1.15rem;
   }
+}
+
+@media only screen and (max-width:1034px){
+  nav {
+    padding-top: 24px
+  }
+  #desktopnav {
+  	font-size: 1.1rem;
+  }
+  ul#desktopnav li {
+  	padding: 7px;
+  }
   h1 {
     font-size: 2.2rem;
+    padding: 60px 5% 60px 5%;
   }
   h3 {
     font-size: 1.8rem;
@@ -348,7 +392,7 @@ footer {
     font-size: 1.2rem;
   }
   ul.socialmedia li {
-    padding: 0 20px 0 0;
+    padding: 0 7.5% 0 0;
   }
   .forminput {
     font-size: 0.9rem;
@@ -356,16 +400,33 @@ footer {
 }
 
 @media only screen and (max-width:976px){
+  .toplogo {
+    width: 290px;
+    height: 36px;
+  }
+  nav {
+    height: 36px;
+    padding-top: 21px
+  }
   #desktopnav {
-  	font-size: 0.95rem;
+  	font-size: 1rem;
+  }
+  ul#desktopnav li {
+    padding: 5px;
   }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1.1rem;
     line-height: 140%;
   }
+  ul.socialmedia li {
+    padding: 0 6% 0 0;
+  }
 }
 
 @media only screen and (max-width:896px){
+  nav {
+    padding-top: 16px
+  }
   #desktopnav {
   	display: none;
   }
@@ -376,21 +437,18 @@ footer {
     font-size: 1.4rem;
   }
   h4 {
-    font: 1.2rem;
+    font-size: 1.3rem;
   }
-  .toplogo {
-    width: 290px;
-    height: 36px;
+  .smallactionbutton {
+    padding: 20px 5px 20px 5px;
   }
   ul.socialmedia li {
-    padding: 0 10px 0 0;
-    text-align: center;
+    padding: 0 5% 0 0;
   }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1rem;
     line-height: 140%;
   }
-
 }
 
 @media only screen and (min-width:896px){
@@ -402,10 +460,24 @@ footer {
   }
 }
 
+@media only screen and (max-width:896px){
+  ul.socialmedia li {
+    padding: 0 3% 0 0;
+  }
+  .tablethamburger {
+    display: block;
+  }
+}
+
 @media only screen and (max-width:768px){
+  .bigactionbutton h3 {
+    padding-bottom: 10px;
+  }
   .smallactionbutton {
-    width: 100%;
     margin-bottom: 0px;
+  }
+  .summary {
+    padding: 50px 11% 50px 11%;
   }
   .calltoaction {
     padding: 0;
@@ -416,7 +488,7 @@ footer {
   }
   .bigactionbutton {
     width: 100%;
-    height: 160px;
+    height: 140px;
     margin: 0 0 20px 0;
     padding: 30px;
   }
@@ -434,6 +506,9 @@ footer {
   }
   .twitter {
     display: none;
+  }
+  #contact {
+    padding: 30px 11% 0 11%;
   }
   #left {
     width: 100%;
@@ -457,16 +532,22 @@ footer {
   }
 }
 
-@media only screen and (min-width:420px){
-  #mobilenav {
+@media only screen and (min-width:640px){
+  #mobilediagrams {
   	display: none;
-  }
-  .mobilehamburger {
-    display: none;
   }
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:640px){
+  .desktopdiagrams {
+  	display: none;
+  }
+  ul#mobilediagrams {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width:508px){
   #tabletnav {
   	display: none;
   }
@@ -481,7 +562,62 @@ footer {
   }
   .mobilehamburger {
     display: block;
-    padding: 10px;
+    padding: 12px;
+    margin: 10px 0 10px 0;
+  }
+}
+
+@media only screen and (max-width:436px){
+  .bigactionbutton h4 {
+    font-size: 1.2rem;
+  }
+  .bigactionbutton {
+    padding: 30px 5% 30px 5%;
+  }
+}
+
+@media only screen and (min-width:420px){
+  #mobilenav {
+  	display: none;
+  }
+  .mobilehamburger {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width:420px){
+  /*#tabletnav {
+  	display: none;
+  }
+  .tablethamburger {
+    display: none;
+  }
+  nav {
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+  }
+  .mobilehamburger {
+    display: block;
+    padding: 12px;
+    margin: 10px 0 10px 0;
+  }*/
+  h1 {
+    padding-top: 96px;
+  }
+  .smallactionbutton {
+    width: 100%;
+  }
+  .summary {
+    padding: 40px 11% 40px 11%;
+  }
+  .diagrams {
+    padding-bottom: 40px;
+  }
+  ul.socialmediamobile li {
+    padding: 0 4% 0 0;
   }
 }
 
