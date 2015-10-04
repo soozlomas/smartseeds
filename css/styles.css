@@ -91,7 +91,7 @@ ul#mobilenav li, {
 
 .mobilehamburger {
   padding-left: 8px;
-  text-align: right;
+  text-align: left;
   display: none;
 }
 
@@ -182,25 +182,18 @@ h4 {
 }
 
 .diagrams {
-  padding: 0 11% 50px 11%;
-}
-
-ul#mobilediagrams li {
-	display:inline;
-}
-
-ul#mobilediagrams li img {
-  vertical-align: middle;
+  padding: 20px 25% 70px 25%;
 }
 
 .calltoaction {
   padding: 0 11% 80px 11%;
-  overflow: auto;
+  height: 380px;
+  /*overflow: auto;*/
 }
 
 .video {
  width: 47%;
- height: 315px;
+ height: 100%;
  margin: 0 3% 0 0;
  float: left;
  background-color: blue;
@@ -208,10 +201,10 @@ ul#mobilediagrams li img {
 
 .bigactionbutton {
   width: 47%;
-  height: 315px;
+  height: 100%;
   float: left;
   margin: 0 0 0 3%;
-  padding: 70px 5% 70px 5%;
+  padding: 65px 5% 0 5%;
 }
 
 .furtherinfo {
@@ -224,7 +217,6 @@ ul#mobilediagrams li img {
   margin: 0 3% 0 0;
   padding: 20px 5% 20px 5%;
   float: left;
-  border: 1px solid black;
 }
 
 .inline {
@@ -246,11 +238,9 @@ ul.sponsorlogos li {
 }
 
 .twitter {
-  height: 405px;
   width: 47%;
-  margin: 0 0 0 3%;
+  margin: 0 0 80px 3%;
   float: left;
-  border: 1px solid black;
 }
 
 #contact {
@@ -359,6 +349,24 @@ footer {
   clear: both;
 }
 
+@media only screen and (max-width:1300px){
+  .diagrams {
+    padding: 20px 21.5% 70px 21.5%;
+  }
+}
+
+@media only screen and (max-width:1263px){
+  .bigactionbutton {
+    padding: 45px 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width:1000px){
+  .diagrams {
+    padding: 20px 18% 70px 18%;
+  }
+}
+
 @media only screen and (max-width:1068px){
   #desktopnav {
   	font-size: 1.15rem;
@@ -386,7 +394,7 @@ footer {
     font-size: 1.6rem;
   }
   .bigactionbutton {
-    padding: 50px 30px 50px 30px;
+    padding: 50px 5% 50px 5%;
   }
   .keytext {
     font-size: 1.2rem;
@@ -440,7 +448,10 @@ footer {
     font-size: 1.3rem;
   }
   .smallactionbutton {
-    padding: 20px 5px 20px 5px;
+    padding: 20px 5px;
+  }
+  .bigactionbutton {
+    padding: 65px 5% 0 5%;
   }
   ul.socialmedia li {
     padding: 0 5% 0 0;
@@ -479,6 +490,9 @@ footer {
   .summary {
     padding: 50px 11% 50px 11%;
   }
+  .diagrams {
+    padding: 5px 12% 70px 12%;
+  }
   .calltoaction {
     padding: 0;
   }
@@ -490,13 +504,12 @@ footer {
     width: 100%;
     height: 140px;
     margin: 0 0 20px 0;
-    padding: 30px;
+    padding: 30px 4% 0 4%;
   }
   .sponsors {
     width: 100%;
     margin: 0 0 20px 0;
     padding: 0;
-    border: 1px solid black;
   }
   .desktopsponsors {
     display: none;
@@ -532,7 +545,7 @@ footer {
   }
 }
 
-@media only screen and (min-width:640px){
+/*@media only screen and (min-width:640px){
   #mobilediagrams {
   	display: none;
   }
@@ -543,7 +556,23 @@ footer {
   	display: none;
   }
   ul#mobilediagrams {
-    display: inline;
+    display: block;
+  }
+  ul#mobilediagrams li {
+    text-align: center;
+    padding: 12px;
+  }
+}*/
+
+@media only screen and (min-width:508px){
+  #mobilenav {
+  	display: none;
+  }
+  .mobilehamburger {
+    display: none;
+  }
+  #mobilediagrams {
+    display: none;
   }
 }
 
@@ -563,7 +592,28 @@ footer {
   .mobilehamburger {
     display: block;
     padding: 12px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
+  }
+  .smallactionbutton {
+    width: 100%;
+  }
+  .desktopdiagrams {
+    display: none;
+  }
+  ul#mobilediagrams {
+    display: block;
+  }
+  ul#mobilediagrams li {
+    text-align: center;
+  }
+  ul#mobilediagrams li:first-child {
+    padding: 0 0 12px 0;
+  }
+  ul#mobilediagrams li:nth-child(2) {
+    padding: 12px 0;
+  }
+  ul#mobilediagrams li:nth-child(3) {
+    padding: 12px 0 0 0;
   }
 }
 
@@ -575,16 +625,6 @@ footer {
     padding: 30px 5% 30px 5%;
   }
 }
-
-@media only screen and (min-width:420px){
-  #mobilenav {
-  	display: none;
-  }
-  .mobilehamburger {
-    display: none;
-  }
-}
-
 
 @media only screen and (max-width:420px){
   /*#tabletnav {
@@ -606,9 +646,6 @@ footer {
   }*/
   h1 {
     padding-top: 96px;
-  }
-  .smallactionbutton {
-    width: 100%;
   }
   .summary {
     padding: 40px 11% 40px 11%;
