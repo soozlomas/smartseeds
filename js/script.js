@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
   $('.mobilehamburger').click(function() {
-      $('#tabletnav').toggle("slow");
+      $('#mobilenav').toggle("slow");
   });
 
 });
