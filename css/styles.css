@@ -1,3 +1,4 @@
+
 * {
   line-height: 140%;
 }
@@ -15,8 +16,17 @@ header {
 	background-repeat: no-repeat;
 }
 
-.additionalhead {
+
+
+#additionalhead {
   height: 110px;
+}
+
+#additionalhead.fixed {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
 }
 
 .logonav {
@@ -196,8 +206,8 @@ h5 {
   padding: 60px 11% 0px 11%;
 }
 
-.additionalsummary {
-  padding: 40px 11% 0px 11%;
+.aboutcontainer {
+  padding: 135px 11% 10px 11%;
 }
 
 .aboutimages {
@@ -212,8 +222,8 @@ h5 {
 ul.abouttext li {
 	display:inline-block;
   vertical-align: top;
-	padding: 10px;
-  width: 33%;
+	padding: 15px;
+  width: 32.8%;
 }
 
 .diagrams {
@@ -528,7 +538,7 @@ footer {
     height: 36px;
     padding-top: 21px
   }
-  .additionalhead {
+  #additionalhead {
     height: 95px;
   }
   #desktopnav {
@@ -537,7 +547,9 @@ footer {
   ul#desktopnav li {
     padding: 5px;
   }
-
+  .aboutcontainer {
+    padding: 120px 11% 10px 11%;
+  }
   #theArt {
     width: 788px;
   }
@@ -625,9 +637,6 @@ footer {
   .summary {
     padding: 50px 11% 20px 11%;
   }
-  .additionalsummary {
-    padding: 40px 11% 20px 11%;
-  }
   .diagrams {
     padding: 0 0 50px 0;
   }
@@ -705,7 +714,15 @@ footer {
     width: 190px;
     height: 190px;
   }
-
+  ul.abouttext li {
+  	display:inline;
+    width: 100%;
+    padding: 15px 0;
+  }
+  ul.abouttext li img {
+    height: 180px;
+    width: 180px;
+  }
 }
 
 
@@ -748,6 +765,9 @@ footer {
   h1 {
     padding-top: 96px;
   }
+  #additionalhead {
+    height: 185px;
+  }
   #tabletnav {
   	display: none;
   }
@@ -770,8 +790,8 @@ footer {
   .smallactionbutton {
     width: 100%;
   }
-  .additionalsummary {
-    padding: 100px 11% 20px 11%;
+.aboutcontainer {
+    padding: 210px 11% 10px 11%;
   }
   .aboutimages {
     display: none;
@@ -801,11 +821,4 @@ footer {
   ul.socialmediamobile li {
     padding: 0 4% 0 0;
   }
-}
-
-
-
-@media only screen and (min-device-width : 320px)
-and (max-device-width : 480px) {
-
 }
