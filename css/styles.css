@@ -3,9 +3,9 @@
 }
 
 body {
-color: #111;
-font-family: 'Karla', sans-serif;
-font-size: 16px;
+  color: #111;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -62,7 +62,6 @@ ul#desktopnav li {
 .bigactionbutton a:hover, .bigactionbutton a:active, .smallactionbutton a:hover, .smallactionbutton a:active {
   color: #E6D3A3;
 }
-
 
 .tablethamburger {
   padding-right: 8px;
@@ -184,12 +183,101 @@ h4 {
 }
 
 .summary {
-  padding: 60px 11% 20px 11%;
+  padding: 60px 11% 0px 11%;
 }
 
 .diagrams {
-  padding: 20px 25% 70px 25%;
+  width: 100%;
+  padding: 20px 0 70px 0;
+  margin: 0 auto;
 }
+
+#theArt {
+  overflow: hidden;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.artGroup {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  padding: 20px;
+}
+
+.artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+.artGroup img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+}
+
+.artGroup .detail {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.artGroup .detail p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0px;
+  padding: 15px 1%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Older Browsers */
+
+.artGroup.slide { overflow: hidden; }
+
+.artGroup.slide .detail { bottom: -364px; }
+
+/* Newer Browsers */
+
+.artGroup.flip {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.artGroup.flip .artwork {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.artGroup.flip .detail,
+.artGroup.flip .theFlip {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.artGroup.flip img,
+.artGroup.flip .detail {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
+
 
 .calltoaction {
   padding: 0 11% 80px 11%;
@@ -197,7 +285,7 @@ h4 {
   /*overflow: auto;*/
 }
 
-.video {
+.vid {
  width: 47%;
  height: 100%;
  margin: 0 3% 0 0;
@@ -355,21 +443,9 @@ footer {
   clear: both;
 }
 
-@media only screen and (max-width:1300px){
-  .diagrams {
-    padding: 20px 21.5% 70px 21.5%;
-  }
-}
-
 @media only screen and (max-width:1263px){
   .bigactionbutton {
     padding: 45px 5% 0 5%;
-  }
-}
-
-@media only screen and (max-width:1000px){
-  .diagrams {
-    padding: 20px 18% 70px 18%;
   }
 }
 
@@ -428,6 +504,19 @@ footer {
   ul#desktopnav li {
     padding: 5px;
   }
+
+  #theArt {
+    width: 788px;
+  }
+  .artGroup {
+    width: 260px;
+    height: 260px;
+  }
+
+  .artGroup .detail p {
+    font-size: 1.1rem;
+  }
+
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1.1rem;
     line-height: 140%;
@@ -456,15 +545,27 @@ footer {
   .smallactionbutton {
     padding: 20px 5px;
   }
+  #theArt {
+    width: 728px;
+  }
+  .artGroup {
+    width: 240px;
+    height: 240px;
+  }
+
   .bigactionbutton {
     padding: 65px 5% 0 5%;
   }
   ul.socialmedia li {
-    padding: 0 5% 0 0;
+    padding: 0 4% 0 0;
   }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1rem;
     line-height: 140%;
+  }
+
+  .tablethamburger {
+    display: block;
   }
 }
 
@@ -477,14 +578,6 @@ footer {
   }
 }
 
-@media only screen and (max-width:896px){
-  ul.socialmedia li {
-    padding: 0 3% 0 0;
-  }
-  .tablethamburger {
-    display: block;
-  }
-}
 
 @media only screen and (max-width:768px){
   .bigactionbutton h3 {
@@ -494,15 +587,25 @@ footer {
     margin-bottom: 0px;
   }
   .summary {
-    padding: 50px 11% 50px 11%;
+    padding: 50px 11% 20px 11%;
   }
   .diagrams {
-    padding: 5px 12% 70px 12%;
+    padding: 0 0 50px 0;
+  }
+  #theArt {
+    width: 668px;
+  }
+  .artGroup {
+    width: 220px;
+    height: 220px;
+  }
+  .artGroup .detail p {
+    font-size: 1rem;
   }
   .calltoaction {
     padding: 0;
   }
-  .video {
+  .vid {
    width: 100%;
    margin: 20px 0 0 0;
   }
@@ -551,14 +654,47 @@ footer {
   }
 }
 
+
+@media only screen and (max-width:688px){
+  .diagrams {
+    padding: 0 0 40px 0;
+  }
+  #theArt {
+    width: 593px;
+  }
+  .artGroup {
+    width: 190px;
+    height: 190px;
+  }
+
+}
+
+
+@media only screen and (max-width:578px){
+  .diagrams {
+    padding: 0 0 40px 0;
+  }
+    #theArt {
+      /*overflow: hidden;*/
+      width: 260px;
+      margin: 0 auto;
+    }
+    .artGroup {
+      display: block;
+      width: 260px;
+      height: 260px;
+    }
+    .artGroup .detail p {
+      font-size: 1.2rem;
+    }
+
+}
+
 @media only screen and (min-width:508px){
   #mobilenav {
   	display: none;
   }
   .mobilehamburger {
-    display: none;
-  }
-  #mobilediagrams {
     display: none;
   }
 }
@@ -586,24 +722,6 @@ footer {
   }
   .smallactionbutton {
     width: 100%;
-  }
-  .desktopdiagrams {
-    display: none;
-  }
-  ul#mobilediagrams {
-    display: block;
-  }
-  ul#mobilediagrams li {
-    text-align: center;
-  }
-  ul#mobilediagrams li:first-child {
-    padding: 0 0 12px 0;
-  }
-  ul#mobilediagrams li:nth-child(2) {
-    padding: 12px 0;
-  }
-  ul#mobilediagrams li:nth-child(3) {
-    padding: 12px 0 0 0;
   }
 }
 
