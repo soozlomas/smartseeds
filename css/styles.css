@@ -15,6 +15,10 @@ header {
 	background-repeat: no-repeat;
 }
 
+.additionalhead {
+  height: 110px;
+}
+
 .logonav {
   vertical-align: bottom;
   display: inline-block;
@@ -59,7 +63,7 @@ ul#desktopnav li {
 }
 
 #tabletnav a:hover, #tabletnav a:active, #mobilenav a:hover, #mobilenav a:active,
-.bigactionbutton a:hover, .bigactionbutton a:active, .smallactionbutton a:hover, .smallactionbutton a:active {
+h3 a:hover, h3 a:active {
   color: #E6D3A3;
 }
 
@@ -125,6 +129,12 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-size: 1.3rem;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .keytext {
   font-size: 1.3rem;
   line-height: 140%;
@@ -184,6 +194,26 @@ h4 {
 
 .summary {
   padding: 60px 11% 0px 11%;
+}
+
+.additionalsummary {
+  padding: 40px 11% 0px 11%;
+}
+
+.aboutimages {
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+.abouttext {
+  width: 100%;
+}
+
+ul.abouttext li {
+	display:inline-block;
+  vertical-align: top;
+	padding: 10px;
+  width: 33%;
 }
 
 .diagrams {
@@ -449,7 +479,7 @@ footer {
   }
 }
 
-@media only screen and (max-width:1068px){
+@media only screen and (max-width:1088px){
   #desktopnav {
   	font-size: 1.15rem;
   }
@@ -497,6 +527,9 @@ footer {
   nav {
     height: 36px;
     padding-top: 21px
+  }
+  .additionalhead {
+    height: 95px;
   }
   #desktopnav {
   	font-size: 1rem;
@@ -576,6 +609,9 @@ footer {
   .tablethamburger {
     display: none;
   }
+  ul#tabletnav li {
+    display: none;
+  }
 }
 
 
@@ -588,6 +624,9 @@ footer {
   }
   .summary {
     padding: 50px 11% 20px 11%;
+  }
+  .additionalsummary {
+    padding: 40px 11% 20px 11%;
   }
   .diagrams {
     padding: 0 0 50px 0;
@@ -697,6 +736,12 @@ footer {
   .mobilehamburger {
     display: none;
   }
+  ul#mobilenav li {
+    display: none;
+  }
+  .aboutimagesmobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:508px){
@@ -709,8 +754,10 @@ footer {
   .tablethamburger {
     display: none;
   }
+  ul#tabletnav li {
+    display: none;
+  }
   nav {
-    /*clear: both;*/
     width: 100%;
     margin-top: 10px;
     float: left;
@@ -722,6 +769,16 @@ footer {
   }
   .smallactionbutton {
     width: 100%;
+  }
+  .additionalsummary {
+    padding: 100px 11% 20px 11%;
+  }
+  .aboutimages {
+    display: none;
+  }
+  .aboutimagesmobile {
+    display: block;
+    margin: 10px 0 20px 0;
   }
 }
 
