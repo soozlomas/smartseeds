@@ -8,7 +8,6 @@ $(document).ready(function(){
       $('#mobilenav').toggle("slow");
   });
 
-  $(function () {
   if ( $('html').hasClass('csstransforms3d') ) {
     $('.artGroup').removeClass('slide').addClass('flip');
     $('.artGroup.flip').on('mouseenter',
@@ -28,8 +27,21 @@ $(document).ready(function(){
       function () {
         $(this).find('.detail').stop().animate({bottom: ($(this).height() + -1) }, 500, 'easeOutCubic');
       });
-  }
-  });
+    } 
+
+
+  var $menu = $('#additionalhead'),
+      menuOffsetTop = $menu[0].offsetTop;
+
+      $(document).bind('ready scroll', function () {
+          var docScroll = $(this).scrollTop();
+
+          if (docScroll >= menuOffsetTop) {
+              $menu.addClass('fixed');
+          } else {
+              $menu.removeClass('fixed');
+          }
+      });
 
 
 });

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g id="icons">
+	<g>
+		<path fill="#9CC32C" d="M60.394,48.294c-0.281-0.061-0.573-0.093-0.873-0.093H24.138c-2.255,0-4.083,1.828-4.083,4.083v66.686
+			h43.55V61.926"/>
+		<path fill="#5E9A31" d="M24.138,129.856h35.384c2.255,0,4.083-1.828,4.083-4.083v-6.805h-43.55v6.805
+			C20.055,128.028,21.883,129.856,24.138,129.856z"/>
+		<circle fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" cx="41.717" cy="124.299" r="2.155"/>
+		<g>
+			<rect x="26.411" y="64.7" fill="#FFFFFF" width="26.243" height="4.25"/>
+			<path fill="#FFFFFF" d="M51.742,65.612v2.425H27.323v-2.425H51.742 M53.566,63.787H25.499v6.075h28.068V63.787L53.566,63.787z"/>
+		</g>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="75.419" x2="57.935" y2="75.419"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="80.863" x2="57.935" y2="80.863"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="86.306" x2="57.935" y2="86.306"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="91.75" x2="57.935" y2="91.75"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="97.194" x2="57.935" y2="97.194"/>
+		
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-linejoin="round" stroke-miterlimit="10" x1="25.499" y1="108.081" x2="41.717" y2="108.081"/>
+		<polygon fill="#D3DBDD" points="74.492,72.13 74.492,83.017 69.049,83.017 74.492,88.348 74.492,104.792 128.93,104.792 
+			128.93,72.13 		"/>
+		<path fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" d="M88.782,109.896
+			c-6.1,0-11.479,1.673-14.66,4.217l-5.074-1.268l2.425,4.647c-0.25,0.641-0.383,1.306-0.383,1.988
+			c0,5.292,7.921,9.583,17.692,9.583c9.771,0,17.692-4.291,17.692-9.583C106.474,114.187,98.553,109.896,88.782,109.896z"/>
+		<g>
+			<g>
+				<circle fill="#9CC32C" cx="97.231" cy="119.479" r="1.871"/>
+				<path fill="#9CC32C" d="M97.231,118.118c0.751,0,1.361,0.609,1.361,1.361s-0.609,1.361-1.361,1.361
+					c-0.752,0-1.361-0.61-1.361-1.361S96.479,118.118,97.231,118.118 M97.231,117.098c-1.313,0-2.381,1.068-2.381,2.382
+					s1.068,2.382,2.381,2.382s2.381-1.069,2.381-2.382S98.544,117.098,97.231,117.098L97.231,117.098z"/>
+			</g>
+			<g>
+				<circle fill="#9CC32C" cx="88.914" cy="119.479" r="1.871"/>
+				<path fill="#9CC32C" d="M88.914,118.118c0.752,0,1.361,0.609,1.361,1.361s-0.609,1.361-1.361,1.361
+					c-0.751,0-1.361-0.61-1.361-1.361S88.163,118.118,88.914,118.118 M88.914,117.098c-1.313,0-2.381,1.068-2.381,2.382
+					s1.068,2.382,2.381,2.382c1.313,0,2.382-1.069,2.382-2.382S90.228,117.098,88.914,117.098L88.914,117.098z"/>
+			</g>
+			<g>
+				<circle fill="#9CC32C" cx="80.598" cy="119.479" r="1.871"/>
+				<path fill="#9CC32C" d="M80.597,118.118c0.751,0,1.361,0.609,1.361,1.361s-0.609,1.361-1.361,1.361s-1.361-0.61-1.361-1.361
+					S79.846,118.118,80.597,118.118 M80.597,117.098c-1.313,0-2.381,1.068-2.381,2.382s1.068,2.382,2.381,2.382
+					s2.381-1.069,2.381-2.382S81.91,117.098,80.597,117.098L80.597,117.098z"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<rect x="85.498" y="80.584" fill="#FFFFFF" width="5.717" height="5.679"/>
+				<path fill="#FFFFFF" d="M90.2,81.6v3.648h-3.686V81.6H90.2 M92.231,79.569H90.2h-3.686h-2.031V81.6v3.648v2.031h2.031H90.2
+					h2.031v-2.031V81.6V79.569L92.231,79.569z"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="95.417" y1="81.291" x2="119.12" y2="81.291"/>
+				
+					<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="95.417" y1="85.557" x2="113.222" y2="85.557"/>
+			</g>
+			<g>
+				
+					<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="95.417" y1="91.365" x2="119.12" y2="91.365"/>
+				
+					<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="95.417" y1="95.631" x2="113.222" y2="95.631"/>
+			</g>
+			<g>
+				<rect x="85.498" y="90.659" fill="#FFFFFF" width="5.717" height="5.679"/>
+				<path fill="#FFFFFF" d="M90.2,91.674v3.648h-3.686v-3.648H90.2 M92.231,89.643H90.2h-3.686h-2.031v2.031v3.648v2.031h2.031H90.2
+					h2.031v-2.031v-3.648V89.643L92.231,89.643z"/>
+			</g>
+		</g>
+		<polygon fill="#FFFFFF" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" points="60.657,20.937 60.657,61.634 
+			83.414,61.634 83.414,67.587 89.104,61.634 128.93,61.634 128.93,20.937 		"/>
+		<g>
+			
+				<rect x="68.38" y="27.992" fill="#5E9A31" stroke="#5E9A31" stroke-width="2.031" stroke-miterlimit="10" width="10.716" height="12.532"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="84.271" y1="40.524" x2="122.1" y2="40.524"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="84.271" y1="27.992" x2="122.1" y2="27.992"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="84.271" y1="34.258" x2="122.1" y2="34.258"/>
+			<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="67.486" y1="46.79" x2="122.1" y2="46.79"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="2.031" stroke-miterlimit="10" x1="67.486" y1="53.056" x2="122.1" y2="53.056"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
+</svg>

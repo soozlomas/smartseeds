@@ -1,3 +1,8 @@
+/***************************
+****************************
+Blanket styles
+****************************
+***************************/
 
 * {
   line-height: 140%;
@@ -9,14 +14,19 @@ body {
   font-size: 16px;
 }
 
+/***************************
+****************************
+Header
+****************************
+***************************/
+
+
 header {
   padding: 40px 5% 0 5%;
   background-image: url("../images/header_bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-
 
 #additionalhead {
   height: 110px;
@@ -29,18 +39,15 @@ header {
   width:100%;
 }
 
+/***************************
+****************************
+Navigation
+****************************
+***************************/
+
 .logonav {
   vertical-align: bottom;
   display: inline-block;
-}
-
-.uppercase {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.centretext {
-  text-align: center;
 }
 
 .toplogo {
@@ -49,13 +56,15 @@ header {
   float: left;
 }
 
+
+
+
 nav {
   font-size: 1.35rem;
   height: 42px;
   padding-top: 22.5px;
 	float: right;
   position: relative;
-
 }
 
 ul#desktopnav li {
@@ -109,6 +118,27 @@ ul#mobilenav li {
   display: none;
   background-color: #000000;
 }
+
+
+
+/***************************
+****************************
+Text
+****************************
+***************************/
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.centretext {
+  text-align: center;
+}
+
+
+
+
 
 p {
   margin-bottom: 15px;
@@ -224,6 +254,10 @@ ul.abouttext li {
   vertical-align: top;
 	padding: 15px;
   width: 32.8%;
+}
+ul.abouttext li img{
+	width: 75%;
+  height: 75%;
 }
 
 .diagrams {
@@ -720,8 +754,8 @@ footer {
     padding: 15px 0;
   }
   ul.abouttext li img {
-    height: 180px;
-    width: 180px;
+    height: 55%;
+    width: 55%;
   }
 }
 
