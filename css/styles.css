@@ -20,7 +20,7 @@ Header
 ****************************
 ***************************/
 
-
+/*main page header*/
 header {
   padding: 40px 5% 0 5%;
   background-image: url("../images/header_bg.jpg");
@@ -28,6 +28,7 @@ header {
 	background-repeat: no-repeat;
 }
 
+/*sticky header on pages other than front page*/
 #additionalhead {
   height: 110px;
 }
@@ -45,20 +46,6 @@ Navigation
 ****************************
 ***************************/
 
-.logonav {
-  vertical-align: bottom;
-  display: inline-block;
-}
-
-.toplogo {
-  width: 340px;
-  height: 42px;
-  float: left;
-}
-
-
-
-
 nav {
   font-size: 1.35rem;
   height: 42px;
@@ -67,31 +54,18 @@ nav {
   position: relative;
 }
 
+.toplogo {
+  width: 340px;
+  height: 42px;
+  float: left;
+}
+
 ul#desktopnav li {
 	display:inline;
 	padding: 8px;
 }
 
-#desktopnav a:link, #desktopnav a:visited, #tabletnav a:link, #tabletnav a:visited, #mobilenav a:link, #mobilenav a:visited,
-.bigactionbutton a:link, .bigactionbutton a:visited, .smallactionbutton a:link, .smallactionbutton a:visited {
-    color: #ffffff;
-}
-
-#desktopnav a:hover, #desktopnav a:active {
-    color: #81bc00;
-}
-
-#tabletnav a:hover, #tabletnav a:active, #mobilenav a:hover, #mobilenav a:active,
-h3 a:hover, h3 a:active {
-  color: #E6D3A3;
-}
-
-.tablethamburger {
-  padding-right: 8px;
-  text-align: right;
-  display: none;
-}
-
+/*hide additional navs until media query is applied*/
 #tabletnav, #mobilenav {
 	display: none;
 }
@@ -102,6 +76,12 @@ ul#tabletnav li {
 	padding: 8px;
   background-color: #81bc00;
   text-align: right;
+}
+
+.tablethamburger {
+  padding-right: 8px;
+  text-align: right;
+  display: none;
 }
 
 ul#mobilenav li {
@@ -119,26 +99,11 @@ ul#mobilenav li {
   background-color: #000000;
 }
 
-
-
 /***************************
 ****************************
 Text
 ****************************
 ***************************/
-
-.uppercase {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.centretext {
-  text-align: center;
-}
-
-
-
-
 
 p {
   margin-bottom: 15px;
@@ -148,6 +113,11 @@ h1 {
   font-size: 2.6rem;
   padding: 80px 5% 60px 5%;
   clear: both;
+}
+
+.maincontainer h1 {
+  font-size: 2rem;
+  padding: 0 0 18px 0;
 }
 
 h2 {
@@ -171,8 +141,16 @@ h4 {
 
 h5 {
   font-size: 1.3rem;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.centretext {
+  text-align: center;
 }
 
 .keytext {
@@ -180,12 +158,12 @@ h5 {
   line-height: 140%;
 }
 
-.weight700 {
-	font-weight: 700;
-}
-
 .weight400 {
   font-weight: 400;
+}
+
+.weight700 {
+	font-weight: 700;
 }
 
 .whitetext {
@@ -204,25 +182,44 @@ h5 {
   font-size: 1.2rem;
 }
 
-.font2rem {
-  font-size: 2rem;
-}
-
 .font2p2rem {
   font-size: 2.2rem;
 }
+
+/***************************
+****************************
+Colour
+****************************
+***************************/
 
 .greenbackground {
   background-color: #81bc00;
 }
 
-.textmargin {
-  padding-bottom: 20px;
+/***************************
+****************************
+Links
+****************************
+***************************/
+
+#desktopnav a:link, #desktopnav a:visited, #tabletnav a:link, #tabletnav a:visited, #mobilenav a:link, #mobilenav a:visited, .bigactionbutton a:link, .bigactionbutton a:visited, .smallactionbutton a:link, .smallactionbutton a:visited {
+    color: #ffffff;
 }
 
-.nomargin {
-  margin: 0;
+#desktopnav a:hover, #desktopnav a:active {
+    color: #81bc00;
 }
+
+#tabletnav a:hover, #tabletnav a:active, #mobilenav a:hover, #mobilenav a:active,
+h3 a:hover, h3 a:active {
+  color: #E6D3A3;
+}
+
+/***************************
+****************************
+Action buttons
+****************************
+***************************/
 
 .smallactionbutton {
   width: 60%;
@@ -232,30 +229,44 @@ h5 {
   margin-bottom: 40px;
 }
 
+.bigactionbutton {
+  width: 47%;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 3%;
+  padding: 65px 5% 0 5%;
+}
+
+/***************************
+****************************
+Sections
+****************************
+***************************/
+
 .summary {
   padding: 60px 11% 0px 11%;
 }
 
-.aboutcontainer {
+.maincontainer {
   padding: 135px 11% 10px 11%;
 }
 
-.aboutimages {
+.mainimages {
   width: 100%;
   margin: 10px 0 20px 0;
 }
 
-.abouttext {
+.maintext {
   width: 100%;
 }
 
-ul.abouttext li {
+ul.maintext li {
 	display:inline-block;
   vertical-align: top;
 	padding: 15px;
   width: 32.8%;
 }
-ul.abouttext li img{
+ul.maintext li img{
 	width: 75%;
   height: 75%;
 }
@@ -367,13 +378,7 @@ ul.abouttext li img{
  background-color: blue;
 }
 
-.bigactionbutton {
-  width: 47%;
-  height: 100%;
-  float: left;
-  margin: 0 0 0 3%;
-  padding: 65px 5% 0 5%;
-}
+
 
 .furtherinfo {
   padding: 0 11% 80px 11%;
@@ -581,7 +586,7 @@ footer {
   ul#desktopnav li {
     padding: 5px;
   }
-  .aboutcontainer {
+  .maincontainer {
     padding: 120px 11% 10px 11%;
   }
   #theArt {
@@ -748,12 +753,12 @@ footer {
     width: 190px;
     height: 190px;
   }
-  ul.abouttext li {
+  ul.maintext li {
   	display:inline;
     width: 100%;
     padding: 15px 0;
   }
-  ul.abouttext li img {
+  ul.maintext li img {
     height: 55%;
     width: 55%;
   }
@@ -790,7 +795,7 @@ footer {
   ul#mobilenav li {
     display: none;
   }
-  .aboutimagesmobile {
+  .mainimagesmobile {
     display: none;
   }
 }
@@ -824,13 +829,13 @@ footer {
   .smallactionbutton {
     width: 100%;
   }
-.aboutcontainer {
+.maincontainer {
     padding: 210px 11% 10px 11%;
   }
-  .aboutimages {
+  .mainimages {
     display: none;
   }
-  .aboutimagesmobile {
+  .mainimagesmobile {
     display: block;
     margin: 10px 0 20px 0;
   }

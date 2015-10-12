@@ -10,66 +10,74 @@
 
   <body>
 
+    <!-- additionalhead used on all pages other than front index page -->
     <header id="additionalhead">
-          <img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo">
-          <nav>
-            <ul id="desktopnav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
+      <a href="index.html"><img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo"></a>
+      <!-- 3 varietions on navigation for responsiveness -->
+      <nav>
+        <ul id="desktopnav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
 
-            <p class="tablethamburger whitetext uppercase weight700">MENU</p>
+        <!-- tablet navigation changes when media query applied -->
+        <p class="tablethamburger whitetext uppercase weight700">MENU</p>
+        <ul id="tabletnav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
 
-            <ul id="tabletnav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-
-            <p class="mobilehamburger whitetext uppercase greenbackground weight700">MENU<p>
-
-            <ul id="mobilenav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
+        <!-- mobile navigation changes when media query applied -->
+        <p class="mobilehamburger whitetext uppercase greenbackground weight700">MENU<p>
+        <ul id="mobilenav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class= "aboutcontainer">
-      <h2 class="weight700 font2rem">About the Smart Seeds program</h2>
-      <div class="aboutimages"><img src="images/about-1-300x200.jpg" width=33.334%><img src="images/about-2-300x200.jpg" width=33.334%><img src="images/about-3-300x200.jpg" width=33.334%></div>
-      <div class="aboutimagesmobile"><img src="images/about-1-300x200.jpg" width=100%></div>
-      <p>Led by GHD, Smart Seeds is an annual innovation program for young professionals to solve infrastructure industry challenges.</p>
-      <p>Smart Seeds has generated 30 new innovative ideas since it began in year 2013.</p>
-      <p>This high energy and creative program will also see participants learn professional skills and network with liked-minded peers interested in innovation.</p>
-      <p>Supported by the industry, Smart Seeds brings all levels of professionals together with a focus on outcomes. It demonstrates the potential power of collaboration across organisations, sectors, disciplines and generations.</p>
+    <!-- main content for the page -->
+    <section class= "maincontainer">
+
+      <h1 class="weight700">About the Smart Seeds program</h1>
+      <div class="mainimages"><img src="images/about-1-300x200.jpg" width=33.334%><img src="images/about-2-300x200.jpg" width=33.334%><img src="images/about-3-300x200.jpg" width=33.334%></div>
+      <div class="mainimagesmobile"><img src="images/about-1-300x200.jpg" width=100%></div>
+
+        <p>Led by GHD, Smart Seeds is an annual innovation program for young professionals to solve infrastructure industry challenges.</p>
+        <p>Smart Seeds has generated 30 new innovative ideas since it began in year 2013.</p>
+        <p>This high energy and creative program will also see participants learn professional skills and network with liked-minded peers interested in innovation.</p>
+        <p>Supported by the industry, Smart Seeds brings all levels of professionals together with a focus on outcomes. It demonstrates the potential power of collaboration across organisations, sectors, disciplines and generations.</p>
+
       <h5 class="weight700">How the Smart Seeds program works</h5>
-      <ul class="abouttext">
+      <ul class="maintext">
         <li><img src="images/challengesetting.svg" alt="Challenge setting"><br>
           <p class="weight700">Challenge setting</p>
           <p>Challenge authors put forward their infrastructure sector challenges at a Challenge Workshop.</p>
-          <p>A challenge is a specific real-life infrastructure challenge (or opportunity) that requires cross-sector collaboration to solve effectively. Typically the challenges have no clear or apparently viable solution. Each team selects one challenge to focus on solving over the 10 week program.</p></li>
+          <p>A challenge is a specific real-life infrastructure challenge (or opportunity) that requires cross-sector collaboration to solve effectively. Typically the challenges have no clear or apparently viable solution. Each team selects one challenge to focus on solving over the 10 week program.</p>
+        </li>
         <li><img src="images/ideadevelopment.svg" alt="Idea development"><br>
           <p class="weight700">Idea development</p>
           <p>At the Launch Workshop, participants from different organisations form multidisciplinary teams to generate ideas to solve the challenges presented.</p>
-          <p>With assistance from professional industry mentors, the teams select their best idea and refine it for the pitch. Through the process participants develop innovation skills, refine presentation and teamwork skills, and build their professional networks.</p></li>
+          <p>With assistance from professional industry mentors, the teams select their best idea and refine it for the pitch. Through the process participants develop innovation skills, refine presentation and teamwork skills, and build their professional networks.</p>
+        </li>
         <li><img src="images/pitchanddelivery.svg" alt="Pitch and delivery"><br>
           <p class="weight700">Pitch and delivery</p>
           <p>At the end of 10 weeks, teams pitch their ideas to a judging panel of senior industry leaders at the exclusive Showcase, an event attended by participating organisations, peers, and industry leaders.</p>
-          As a reflection of the calibre of the ideas presented, the teams are often invited to present their ideas again to interested attending and participating organisations following the Showcase.</p></li>
+          As a reflection of the calibre of the ideas presented, the teams are often invited to present their ideas again to interested attending and participating organisations following the Showcase.</p>
+        </li>
       </ul>
     </section>
 
-
-
+    <!-- The contact information and form at the bottom of each page -->
     <section id="contact" class= "greenbackground group whitetext keytext">
       <p>Expressions of interest for the 2016 Smart Seeds program are now open.
         Please contact Jeremy or Tammy or complete the form below.</p>
@@ -123,13 +131,13 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class= "greenbackground">
-      <p class="whitetext centretext">&copy; 2013 - 2015 Founding Partner GHD Pty Ltd  |  FAQs  |  Privacy Policy  | Contact Us</p>
+      <p class="whitetext centretext">&copy; 2013 - 2015 Founding Partner GHD Pty Ltd</p>
     </footer>
 
+    <!-- Scripts go here -->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <script src="js/script.js"></script>
 
   </body>

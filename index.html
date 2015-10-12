@@ -11,48 +11,51 @@
   <body>
 
     <header>
-          <img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo">
-          <nav>
-            <ul id="desktopnav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
+      <a href="index.html"><img class="toplogo" src="images/logo_white.png" width=340px height=42px alt="Smart Seeds logo"></a>
+      <!-- 3 varietions on navigation for responsiveness -->
+      <nav>
+        <ul id="desktopnav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
 
-            <p class="tablethamburger whitetext uppercase weight700">MENU</p>
+        <!-- tablet navigation changes when media query applied -->
+        <p class="tablethamburger whitetext uppercase weight700">MENU</p>
+        <ul id="tabletnav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
 
-            <ul id="tabletnav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
+        <!-- mobile navigation changes when media query applied -->
+        <p class="mobilehamburger whitetext uppercase greenbackground weight700">MENU<p>
+        <ul id="mobilenav" class="uppercase">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">COMPETITIONS</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
 
-            <p class="mobilehamburger whitetext uppercase greenbackground weight700">MENU<p>
-
-            <ul id="mobilenav" class="uppercase">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="#">COMPETITIONS</a></li>
-              <li><a href="resources.html">RESOURCES</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
-
-        <h1 class="whitetext centretext">Smart Seeds is an annual innovation competition
-          for young professionals focused on solving real challenges in the infrastructure sectors </h1>
-        <!-- <h3 class="smallactionbutton whitetext greenbackground"><a href="mailto:kevin.begg@ghd.com">GET INVOLVED IN 2016</a></h3> -->
-        <h3><a class="smallactionbutton whitetext greenbackground" href="mailto:kevin.begg@ghd.com?subject=I would like to get involved in Smart Seeds 2016">GET INVOLVED IN 2016</a></h3>
+      <h1 class="whitetext centretext">Smart Seeds is an annual innovation competition
+        for young professionals focused on solving real challenges in the infrastructure sectors </h1>
+      <h3><a class="smallactionbutton whitetext greenbackground" href="mailto:kevin.begg@ghd.com?subject=I would like to get involved in Smart Seeds 2016">GET INVOLVED IN 2016</a></h3>
     </header>
 
+    <!-- text to summarise what the Smart Seeds program is -->
     <section class= "summary centretext">
       <h2 class="weight700">Participate. Mentor. Share a challenge.</h2>
       <p class="keytext">Led by GHD, Smart Seeds runs for 10 weeks each year, bringing together bright young minds from different disciplines and organisations to work on innovative concepts for our infrastructure industry.  </p>
     </section>
 
+    <!-- diagrams to summarise what the Smart Seeds program is -->
+    <!-- javascript adds the icon flipping function -->
     <section class="diagrams">
       <div id="theArt">
       	<div class="artGroup slide">
@@ -79,24 +82,24 @@
       </div>
     </section>
 
+    <!-- youtube video of last year's competition and big call to action button-->
     <section class= "calltoaction">
       <div class="vid">
        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v3OOlypcvyk" frameborder="0" allowfullscreen></iframe>
-        <!-- <iframe width="420" height="315" src="https://www.youtube.com/watch?v=v3OOlypcvyk?autohide=1&autoplay=0&loop=0&" frameborder="0" allowfullscreen>
-        </iframe> -->
       </div>
 
       <div class="bigactionbutton greenbackground">
-        <h3><a class="whitetext" href="mailto:kevin.begg@ghd.com?subject=I would like to get involved in Smart Seeds 2016">Get involved in 2016</a></h3>
+        <h3><a href="mailto:kevin.begg@ghd.com?subject=I would like to get involved in Smart Seeds 2016">Get involved in 2016</a></h3>
         <h4 class="whitetext">Smart Seeds will run in Brisbane, Melbourne, Perth, Sydney
         and Auckland</h4></a>
       </div>
-
     </section>
 
+    <!-- further info about program sponsors (desktop & mobile) and twitter feed -->
     <section class="furtherinfo">
       <div class= "sponsors">
         <h4>2015 major supporters</h4>
+
         <div class="desktopsponsors">
           <ul class="sponsorlogos centretext">
             <li><img src="images/logo_ea_51H.jpg" alt="Engineers Australia"></li>
@@ -116,14 +119,15 @@
           <li><img src="images/logo_ghd_51H.jpg" alt="GHD"></li>
         </ul>
       </div>
-
       </div>
 
+      <!-- code to embed tweets was taken straight from twitter -->
       <div class="twitter">
         <a class="twitter-timeline" href="https://twitter.com/smartseedsgrow" data-widget-id="650555036636852224">Tweets by @smartseedsgrow</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </section>
 
+    <!-- The contact information and form at the bottom of each page -->
     <section id="contact" class= "greenbackground group whitetext keytext">
       <p>Expressions of interest for the 2016 Smart Seeds program are now open.
         Please contact Jeremy or Tammy or complete the form below.</p>
@@ -177,11 +181,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class= "greenbackground">
-      <p class="whitetext centretext">&copy; 2013 - 2015 Founding Partner GHD Pty Ltd  |  FAQs  |  Privacy Policy  | Contact Us</p>
+      <p class="whitetext centretext">&copy; 2013 - 2015 Founding Partner GHD Pty Ltd</p>
     </footer>
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Scripts go here -need easing and modernizr for the front page flip function -->        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <script src="js/script.js"></script>
