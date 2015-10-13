@@ -814,11 +814,11 @@ max-width:508px
 
 @media only screen and (max-width:508px){
   #additionalhead {
-    height: 185px;
+    height: 169px;
   }
   nav {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
     float: left;
   }
   #tabletnav, ul#tabletnav li, .tablethamburger, .mainimages {
@@ -836,7 +836,7 @@ max-width:508px
     width: 100%;
   }
   .maincontainer {
-    padding: 210px 11% 10px 11%;
+    padding: 194px 11% 10px 11%;
   }
   .mainimagesmobile {
     display: block;
