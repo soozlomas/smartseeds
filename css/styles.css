@@ -418,11 +418,7 @@ needed some fiddling to make it sit right
   clear: both;
 }
 
-#left {
-  vertical-align: top;
-}
-
-#right {
+#left, #right {
   vertical-align: top;
 }
 
@@ -682,14 +678,8 @@ min-width:896px - to hide tablet nav elements
 ***************************/
 
 @media only screen and (min-width:896px){
-  #tabletnav {
+  #tabletnav, ul#tabletnav li, .tablethamburger {
   	display: none;
-  }
-  ul#tabletnav li {
-    display: none;
-  }
-  .tablethamburger {
-    display: none;
   }
 }
 
@@ -726,7 +716,7 @@ max-width:768px
   .artGroup .detail p {
     font-size: 1rem;
   }
-  .calltoaction {
+  .calltoaction, ul.socialmediamobile li:nth-child(4) {
     padding: 0;
   }
   .vid {
@@ -738,37 +728,25 @@ max-width:768px
     margin: 0 0 20px 0;
     padding: 0;
   }
-  .desktopsponsors {
+  .desktopsponsors, .twitter, .socialmedia {
     display: none;
   }
   .mobilesponsors {
     display: block;
   }
-  .twitter {
-    display: none;
-  }
   #contact {
     padding: 30px 11% 0 11%;
   }
-  #left {
-    width: 100%;
-  }
-  #right {
+  #left, #right {
     width: 100%;
   }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1.2rem;
     line-height: 140%;
   }
-  .socialmedia {
-    display: none;
-  }
   .socialmediamobile {
     display: inline-block;
     width: 100%;
-  }
-  ul.socialmediamobile li:nth-child(4) {
-    padding: 0;
   }
 }
 
@@ -825,17 +803,8 @@ min-width:508px - to hide mobile elements
 ***************************/
 
 @media only screen and (min-width:508px){
-  #mobilenav {
+  #mobilenav, ul#mobilenav li, .mobilehamburger, .mainimagesmobile {
   	display: none;
-  }
-  ul#mobilenav li {
-    display: none;
-  }
-  .mobilehamburger {
-    display: none;
-  }
-  .mainimagesmobile {
-    display: none;
   }
 }
 
@@ -852,14 +821,8 @@ max-width:508px
     margin-top: 10px;
     float: left;
   }
-  #tabletnav {
+  #tabletnav, ul#tabletnav li, .tablethamburger, .mainimages {
   	display: none;
-  }
-  ul#tabletnav li {
-    display: none;
-  }
-  .tablethamburger {
-    display: none;
   }
   .mobilehamburger {
     display: block;
@@ -875,9 +838,6 @@ max-width:508px
   .maincontainer {
     padding: 210px 11% 10px 11%;
   }
-  .mainimages {
-    display: none;
-  }
   .mainimagesmobile {
     display: block;
     margin: 10px 0 20px 0;
@@ -890,7 +850,7 @@ max-width:436px
 
 @media only screen and (max-width:436px){
   .bigactionbutton {
-    padding: 30px 5% 30px 5%;
+    padding: 30px 5%;
   }
   .bigactionbutton h4 {
     font-size: 1.2rem;
@@ -906,13 +866,26 @@ max-width:420px
 
 @media only screen and (max-width:420px){
   .summary {
-    padding: 40px 11% 40px 11%;
+    padding: 40px 11%;
   }
   .diagrams {
     padding-bottom: 40px;
   }
   ul.socialmediamobile li {
     padding: 0 4% 0 0;
+  }
+}
+
+/***************************
+max-width:388px
+***************************/
+
+@media only screen and (max-width:388px){
+  .bigactionbutton {
+    padding: 22px 5%;
+  }
+  .bigactionbutton h4 {
+    font-size: 1.1rem;
   }
 }
 
