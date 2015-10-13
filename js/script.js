@@ -2,12 +2,12 @@ $(document).ready(function(){
 
   //toggles menu that slides down when screen width is between 896px and 508px
   $('.tablethamburger').click(function() {
-      $('#tabletnav').toggle("slow");
+      $('#tabletnav').slideToggle("slow");
   });
 
   //toggles menu that slides down when screen width is less that 508px
   $('.mobilehamburger').click(function() {
-      $('#mobilenav').toggle("slow");
+      $('#mobilenav').slideToggle("slow");
   });
 
   //creates effect of images flipping over to show text behind as used on front page
