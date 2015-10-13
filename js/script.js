@@ -1,13 +1,16 @@
 $(document).ready(function(){
 
+  //toggles menu that slides down when screen width is between 896px and 508px
   $('.tablethamburger').click(function() {
       $('#tabletnav').toggle("slow");
   });
 
+  //toggles menu that slides down when screen width is less that 508px
   $('.mobilehamburger').click(function() {
       $('#mobilenav').toggle("slow");
   });
 
+  //creates effect of images flipping over to show text behind as used on front page
   if ( $('html').hasClass('csstransforms3d') ) {
     $('.artGroup').removeClass('slide').addClass('flip');
     $('.artGroup.flip').on('mouseenter',
@@ -27,21 +30,20 @@ $(document).ready(function(){
       function () {
         $(this).find('.detail').stop().animate({bottom: ($(this).height() + -1) }, 500, 'easeOutCubic');
       });
-    } 
+    }
 
-
+  //creates sticky top navigation on all pages other than the front page
   var $menu = $('#additionalhead'),
-      menuOffsetTop = $menu[0].offsetTop;
+  menuOffsetTop = $menu[0].offsetTop;
 
-      $(document).bind('ready scroll', function () {
-          var docScroll = $(this).scrollTop();
+  $(document).bind('ready scroll', function () {
+      var docScroll = $(this).scrollTop();
 
-          if (docScroll >= menuOffsetTop) {
-              $menu.addClass('fixed');
-          } else {
-              $menu.removeClass('fixed');
-          }
-      });
-
+      if (docScroll >= menuOffsetTop) {
+          $menu.addClass('fixed');
+      } else {
+          $menu.removeClass('fixed');
+      }
+  });
 
 });

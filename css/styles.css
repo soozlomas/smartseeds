@@ -174,16 +174,8 @@ h5 {
   color: #81bc00;
 }
 
-.font090rem {
-  font-size: 0.9rem;
-}
-
 .font1p2rem {
   font-size: 1.2rem;
-}
-
-.font2p2rem {
-  font-size: 2.2rem;
 }
 
 /***************************
@@ -211,7 +203,7 @@ Links
 }
 
 #tabletnav a:hover, #tabletnav a:active, #mobilenav a:hover, #mobilenav a:active,
-h3 a:hover, h3 a:active {
+h3 a:hover, h3 a:active, a:active h3, a:hover h3 {
   color: #E6D3A3;
 }
 
@@ -239,7 +231,7 @@ Action buttons
 
 /***************************
 ****************************
-Sections
+Sections of the front page
 ****************************
 ***************************/
 
@@ -247,35 +239,62 @@ Sections
   padding: 60px 11% 0px 11%;
 }
 
-.maincontainer {
-  padding: 135px 11% 10px 11%;
-}
-
-.mainimages {
-  width: 100%;
-  margin: 10px 0 20px 0;
-}
-
-.maintext {
-  width: 100%;
-}
-
-ul.maintext li {
-	display:inline-block;
-  vertical-align: top;
-	padding: 15px;
-  width: 32.8%;
-}
-ul.maintext li img{
-	width: 75%;
-  height: 75%;
-}
-
 .diagrams {
   width: 100%;
   padding: 20px 0 70px 0;
   margin: 0 auto;
 }
+
+.calltoaction {
+  padding: 0 11% 80px 11%;
+  height: 380px;
+}
+
+.vid {
+ width: 47%;
+ height: 100%;
+ margin: 0 3% 0 0;
+ float: left;
+ background-color: blue;
+}
+
+.furtherinfo {
+  padding: 0 11% 80px 11%;
+  clear: both;
+}
+
+.sponsors {
+  width: 47%;
+  margin: 0 3% 0 0;
+  padding: 20px 5% 20px 5%;
+  float: left;
+}
+
+ul.sponsorlogos {
+  padding: 20px 0 5px 0;
+  line-height: 2.2rem;
+}
+
+ul.sponsorlogos li {
+	display:inline;
+  padding: 9px;
+}
+
+.mobilesponsors {
+  display: none;
+}
+
+.twitter {
+  width: 47%;
+  margin: 0 0 80px 3%;
+  float: left;
+}
+
+/***************************
+****************************
+For the javascript image flipping
+****************************
+***************************/
 
 #theArt {
   overflow: hidden;
@@ -296,7 +315,6 @@ ul.maintext li img{
   width: 100%;
   height: 100%;
   margin: 0 auto;
-
 }
 
 .artGroup img {
@@ -323,7 +341,6 @@ ul.maintext li img{
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 /* Older Browsers */
 
@@ -357,64 +374,43 @@ ul.maintext li img{
   backface-visibility: hidden;
 }
 
+/***************************
+****************************
+Sections of all pages other than front page
+****************************
+***************************/
 
-
-
-
-
-
-
-.calltoaction {
-  padding: 0 11% 80px 11%;
-  height: 380px;
-  /*overflow: auto;*/
+.maincontainer {
+  padding: 135px 11% 10px 11%;
 }
 
-.vid {
- width: 47%;
- height: 100%;
- margin: 0 3% 0 0;
- float: left;
- background-color: blue;
+.mainimages {
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
-
-
-.furtherinfo {
-  padding: 0 11% 80px 11%;
-  clear: both;
+.maintext {
+  width: 100%;
 }
 
-.sponsors {
-  width: 47%;
-  margin: 0 3% 0 0;
-  padding: 20px 5% 20px 5%;
-  float: left;
+ul.maintext li {
+	display:inline-block;
+  vertical-align: top;
+	padding: 15px;
+  width: 32.8%;
 }
 
-.inline {
-  display: inline;
+ul.maintext li img{
+	width: 75%;
+  height: 75%;
 }
 
-ul.sponsorlogos {
-  padding: 20px 0 5px 0;
-  line-height: 2.2rem;
-}
-
-ul.sponsorlogos li {
-	display:inline;
-  padding: 9px;
-}
-
-.mobilesponsors {
-  display: none;
-}
-
-.twitter {
-  width: 47%;
-  margin: 0 0 80px 3%;
-  float: left;
-}
+/***************************
+****************************
+Contact section at bottom of every page
+needed some fiddling to make it sit right
+****************************
+***************************/
 
 #contact {
   width: 100%;
@@ -450,6 +446,7 @@ ul.sponsorlogos li {
   display: inline-block;
   width: 47%;
 }
+
 .contactsingle {
   display: inline-block;
   vertical-align: text-top;
@@ -481,6 +478,11 @@ ul.socialmediamobile li {
   padding: 0 8.5% 0 0;
 }
 
+/***************************
+****************************
+Form styling in contact section
+****************************
+***************************/
 
 input {
   background-color: #ffffff;
@@ -511,10 +513,10 @@ input[type=submit] {
 }
 
 textarea {
-    height: 56px;
-    width: 100%;
-    border: 0;
-    margin: 5px 0 10px 0;
+  height: 56px;
+  width: 100%;
+  border: 0;
+  margin: 5px 0 10px 0;
 }
 
 footer {
@@ -522,17 +524,35 @@ footer {
   clear: both;
 }
 
+/***************************
+****************************
+Media queries
+****************************
+***************************/
+
+/***************************
+max-width:1263px
+***************************/
+
 @media only screen and (max-width:1263px){
   .bigactionbutton {
     padding: 45px 5% 0 5%;
   }
 }
 
+/***************************
+max-width:1088px
+***************************/
+
 @media only screen and (max-width:1088px){
   #desktopnav {
   	font-size: 1.15rem;
   }
 }
+
+/***************************
+max-width:1034px
+***************************/
 
 @media only screen and (max-width:1034px){
   nav {
@@ -560,25 +580,29 @@ footer {
   .keytext {
     font-size: 1.2rem;
   }
-  ul.socialmedia li {
-    padding: 0 7.5% 0 0;
-  }
   .forminput {
     font-size: 0.9rem;
   }
+  ul.socialmedia li {
+    padding: 0 7.5% 0 0;
+  }
 }
+
+/***************************
+max-width:976px
+***************************/
 
 @media only screen and (max-width:976px){
   .toplogo {
     width: 290px;
     height: 36px;
   }
+  #additionalhead {
+    height: 95px;
+  }
   nav {
     height: 36px;
     padding-top: 21px
-  }
-  #additionalhead {
-    height: 95px;
   }
   #desktopnav {
   	font-size: 1rem;
@@ -596,11 +620,9 @@ footer {
     width: 260px;
     height: 260px;
   }
-
   .artGroup .detail p {
     font-size: 1.1rem;
   }
-
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1.1rem;
     line-height: 140%;
@@ -610,12 +632,19 @@ footer {
   }
 }
 
+/***************************
+max-width:896px
+***************************/
+
 @media only screen and (max-width:896px){
   nav {
     padding-top: 16px
   }
   #desktopnav {
   	display: none;
+  }
+  .tablethamburger {
+    display: block;
   }
   h1 {
     font-size: 1.8rem;
@@ -629,6 +658,9 @@ footer {
   .smallactionbutton {
     padding: 20px 5px;
   }
+  .bigactionbutton {
+    padding: 65px 5% 0 5%;
+  }
   #theArt {
     width: 728px;
   }
@@ -636,42 +668,47 @@ footer {
     width: 240px;
     height: 240px;
   }
-
-  .bigactionbutton {
-    padding: 65px 5% 0 5%;
-  }
-  ul.socialmedia li {
-    padding: 0 4% 0 0;
-  }
   .contactsingle, form.font1p2rem, input.font1p2rem {
     font-size: 1rem;
     line-height: 140%;
   }
-
-  .tablethamburger {
-    display: block;
+  ul.socialmedia li {
+    padding: 0 4% 0 0;
   }
 }
+
+/***************************
+min-width:896px - to hide tablet nav elements
+***************************/
 
 @media only screen and (min-width:896px){
   #tabletnav {
   	display: none;
   }
-  .tablethamburger {
+  ul#tabletnav li {
     display: none;
   }
-  ul#tabletnav li {
+  .tablethamburger {
     display: none;
   }
 }
 
+/***************************
+max-width:768px
+***************************/
 
 @media only screen and (max-width:768px){
-  .bigactionbutton h3 {
-    padding-bottom: 10px;
-  }
   .smallactionbutton {
     margin-bottom: 0px;
+  }
+  .bigactionbutton {
+    width: 100%;
+    height: 140px;
+    margin: 0 0 20px 0;
+    padding: 30px 4% 0 4%;
+  }
+  .bigactionbutton h3 {
+    padding-bottom: 10px;
   }
   .summary {
     padding: 50px 11% 20px 11%;
@@ -696,12 +733,6 @@ footer {
    width: 100%;
    margin: 20px 0 0 0;
   }
-  .bigactionbutton {
-    width: 100%;
-    height: 140px;
-    margin: 0 0 20px 0;
-    padding: 30px 4% 0 4%;
-  }
   .sponsors {
     width: 100%;
     margin: 0 0 20px 0;
@@ -725,6 +756,10 @@ footer {
   #right {
     width: 100%;
   }
+  .contactsingle, form.font1p2rem, input.font1p2rem {
+    font-size: 1.2rem;
+    line-height: 140%;
+  }
   .socialmedia {
     display: none;
   }
@@ -735,12 +770,11 @@ footer {
   ul.socialmediamobile li:nth-child(4) {
     padding: 0;
   }
-  .contactsingle, form.font1p2rem, input.font1p2rem {
-    font-size: 1.2rem;
-    line-height: 140%;
-  }
 }
 
+/***************************
+max-width:688px
+***************************/
 
 @media only screen and (max-width:688px){
   .diagrams {
@@ -764,35 +798,40 @@ footer {
   }
 }
 
+/***************************
+max-width:896px
+***************************/
 
 @media only screen and (max-width:578px){
   .diagrams {
     padding: 0 0 40px 0;
   }
-    #theArt {
-      /*overflow: hidden;*/
-      width: 260px;
-      margin: 0 auto;
-    }
-    .artGroup {
-      display: block;
-      width: 260px;
-      height: 260px;
-    }
-    .artGroup .detail p {
-      font-size: 1.2rem;
-    }
-
+  #theArt {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .artGroup {
+    display: block;
+    width: 260px;
+    height: 260px;
+  }
+  .artGroup .detail p {
+    font-size: 1.2rem;
+  }
 }
+
+/***************************
+min-width:508px - to hide mobile elements
+***************************/
 
 @media only screen and (min-width:508px){
   #mobilenav {
   	display: none;
   }
-  .mobilehamburger {
+  ul#mobilenav li {
     display: none;
   }
-  ul#mobilenav li {
+  .mobilehamburger {
     display: none;
   }
   .mainimagesmobile {
@@ -800,36 +839,40 @@ footer {
   }
 }
 
+/***************************
+max-width:508px
+***************************/
+
 @media only screen and (max-width:508px){
-  h1 {
-    padding-top: 96px;
-  }
   #additionalhead {
     height: 185px;
-  }
-  #tabletnav {
-  	display: none;
-  }
-  .tablethamburger {
-    display: none;
-  }
-  ul#tabletnav li {
-    display: none;
   }
   nav {
     width: 100%;
     margin-top: 10px;
     float: left;
   }
+  #tabletnav {
+  	display: none;
+  }
+  ul#tabletnav li {
+    display: none;
+  }
+  .tablethamburger {
+    display: none;
+  }
   .mobilehamburger {
     display: block;
     padding: 12px;
     margin: 10px 0;
   }
+  h1 {
+    padding-top: 96px;
+  }
   .smallactionbutton {
     width: 100%;
   }
-.maincontainer {
+  .maincontainer {
     padding: 210px 11% 10px 11%;
   }
   .mainimages {
@@ -841,14 +884,22 @@ footer {
   }
 }
 
+/***************************
+max-width:436px
+***************************/
+
 @media only screen and (max-width:436px){
-  .bigactionbutton h4 {
-    font-size: 1.2rem;
-  }
   .bigactionbutton {
     padding: 30px 5% 30px 5%;
   }
+  .bigactionbutton h4 {
+    font-size: 1.2rem;
+  }
 }
+
+/***************************
+max-width:420px
+***************************/
 
 @media only screen and (max-width:420px){
   .summary {
