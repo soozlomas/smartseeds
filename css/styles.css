@@ -499,7 +499,7 @@ input[name=message] {
 input[type=submit] {
   font-family: 'Karla', sans-serif;
   height: 28px;
-  width: 25%;
+  width: 30%;
   border: 0;
   float: right;
   margin-bottom: 45px;
@@ -910,5 +910,23 @@ max-width:420px
   }
   ul.socialmediamobile li {
     padding: 0 4% 0 0;
+  }
+}
+
+/***************************
+max-width:382px
+***************************/
+
+@media only screen and (max-width:382px){
+  .contactsingle {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  ul.socialmediamobile li img {
+    width: 20%;
+    height: 20%;
   }
 }
